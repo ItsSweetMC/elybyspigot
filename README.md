@@ -6,5 +6,4 @@ It works by using ely.by authlib instead mojang's official authlib which allows 
 The drawbacks are that you cannot login to the server using Mojang
 
 
-> [!] Everything is done using the official ely.by authlib installation
-> https://docs.ely.by/en/minecraft-auth.html#install-server
+> [!] Everything is done using the official ely.by authlib installation [Authlib Installation](https://docs.ely.by/en/minecraft-auth.html#install-server)
