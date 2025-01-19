@@ -1,3 +1,5 @@
+![logo111](https://github.com/user-attachments/assets/ff7cee43-4cf9-4443-b6b0-f5c961305aae)
+
 # ElyBySpigot
 Spigot fork with ely.by authentication instead of Mojang
 ## How does it work?
