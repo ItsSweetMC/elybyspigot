@@ -10,13 +10,13 @@
 
 ## Overview
 
-ElyBySpigot replaces Mojang's official authentication library with Ely.by's custom **authlib**, enabling players with Ely.by accounts to authenticate securely on your server while maintaining online mode functionality.
+ElyBySpigot is a prebuilt fork of Spigot that replaces Mojang's authentication system with Ely.by's custom **authlib**. This allows players with Ely.by accounts to log in securely to your server while retaining online mode functionality.
 
 ---
 
 ## How It Works
 
-ElyBySpigot interacts with Ely.by's services to authenticate users. Below are some key API endpoints used:
+ElyBySpigot interacts with Ely.by's services to authenticate users. Here are key API endpoints used:
 
 > **UUID by Username**  
 Retrieve the UUID associated with a given username.
@@ -53,42 +53,46 @@ Retrieve all usernames associated with a specific UUID.
   ]
   ```
 
-For more details, refer to the [Ely.by API Documentation](https://docs.ely.by/en/api.html).
+For more details, see the [Ely.by API Documentation](https://docs.ely.by/en/api.html).
 
 ---
 
-## Drawbacks
+## Installation
 
-- **Mojang Authentication Unsupported:** Players cannot log in using Mojang accounts.  
-- **Exclusive Ely.by Authlib Usage:** Authentication is managed solely through Ely.by's official **authlib**.
+1. **Download ElyBySpigot**  
+   Get the latest prebuilt version from the [Releases](https://github.com/ItsSweetMC/elybyspigot/releases) page.
 
----
+2. **Place the Server in Your Directory**  
+   Add the downloaded server `.jar` file to your server directory.
 
-## Installation Guide
+3. **Run and Stop the Server**  
+   Start the server once, then stop it to generate configuration files.
 
-To set up ElyBySpigot on your server:
+4. **Modify `server.properties` File**  
+   Open the `server.properties` file and set:  
+   ```properties
+   enforce-secure-profile=false
+   ```  
+   This enables chat support.
 
-1. **Install Ely.by Authlib**  
-   Follow the official guide:  
-   [Ely.by Authlib Installation](https://docs.ely.by/en/minecraft-auth.html#install-server)
-
-2. **Update Your Server Configuration**  
-   - Replace the default `authlib` in your Spigot server with the Ely.by version.  
-   - Configure your server to run in online mode to support Ely.by authentication.
+5. **Start the Server**  
+   Launch the server again. You can now join using your Ely.by account.
 
 ---
 
 ## Features
 
 - **Custom Authentication:** Supports Ely.by accounts for secure login.  
-- **Secure Online Mode:** Provides online mode functionality for Ely.by users.  
+- **Chat Support:** Fully functional chat with the required secure profile adjustments.  
 - **Spigot Compatibility:** Operates just like traditional Spigot, with minimal modifications.  
 
 ---
 
 ## Debugging and Support
 
-If you encounter any issues, watch this video where I troubleshoot bugs:  
+If you run into any issues, watch this video where I troubleshoot common bugs:  
 [Debugging ElyBySpigot](https://youtu.be/f3N10ql_BEM)
 
 ---
+
+Feel free to report issues or contribute to the project on GitHub!
